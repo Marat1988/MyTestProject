@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestDBModelStoreContainer" CdmEntityContainer="TestDBEntities">
+    <EntitySetMapping Name="Card">
+      <EntityTypeMapping TypeName="IsTypeOf(TestDBModel.Card)">
+        <MappingFragment StoreEntitySet="Card">
+          <ScalarProperty Name="CARDCODE" ColumnName="CARDCODE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="FINISHDATE" ColumnName="FINISHDATE" />
+          <ScalarProperty Name="LASTNAME" ColumnName="LASTNAME" />
+          <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+          <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="GENDERID" ColumnName="GENDERID" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="PHONEHOME" ColumnName="PHONEHOME" />
+          <ScalarProperty Name="PHONEMOBIL" ColumnName="PHONEMOBIL" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STREET" ColumnName="STREET" />
+          <ScalarProperty Name="HOUSE" ColumnName="HOUSE" />
+          <ScalarProperty Name="APARTMENT" ColumnName="APARTMENT" />
+          <ScalarProperty Name="ALTADDRESS" ColumnName="ALTADDRESS" />
+          <ScalarProperty Name="CARDTYPE" ColumnName="CARDTYPE" />
+          <ScalarProperty Name="OWNERGUID" ColumnName="OWNERGUID" />
+          <ScalarProperty Name="CARDPER" ColumnName="CARDPER" />
+          <ScalarProperty Name="TURNOVER" ColumnName="TURNOVER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

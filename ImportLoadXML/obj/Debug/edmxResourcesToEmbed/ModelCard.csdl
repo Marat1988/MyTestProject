@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="CARDCODE" />
+    </Key>
+    <Property Name="CARDCODE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STARTDATE" Type="DateTime" Precision="3" />
+    <Property Name="FINISHDATE" Type="DateTime" Precision="3" />
+    <Property Name="LASTNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SURNAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FULLNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GENDERID" Type="Byte" Nullable="false" />
+    <Property Name="BIRTHDAY" Type="DateTime" Precision="3" />
+    <Property Name="PHONEHOME" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="PHONEMOBIL" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STREET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HOUSE" Type="Byte" />
+    <Property Name="APARTMENT" Type="Byte" />
+    <Property Name="ALTADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CARDTYPE" Type="String" Unicode="false" MaxLength="50" FixedLength="false" />
+    <Property Name="OWNERGUID" Type="Guid" Nullable="false" />
+    <Property Name="CARDPER" Type="Byte" Nullable="false" />
+    <Property Name="TURNOVER" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TestDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Card" EntityType="Self.Card" />
+  </EntityContainer>
+</Schema>

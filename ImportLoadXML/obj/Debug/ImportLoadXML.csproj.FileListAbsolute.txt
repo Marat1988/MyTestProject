@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\ImportLoadXML.exe.config
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\ImportLoadXML.exe
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\ImportLoadXML.pdb
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.Form1.resources
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.Properties.Resources.resources
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.exe
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.pdb
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\obj\Debug\ImportLoadXML.csproj.CopyComplete
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\CsQuery.dll
+C:\Users\HP\Desktop\TestProject2\ImportLoadXML\bin\Debug\CsQuery.xml

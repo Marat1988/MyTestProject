@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Card">
+          <Key>
+            <PropertyRef Name="CARDCODE" />
+          </Key>
+          <Property Name="CARDCODE" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="STARTDATE" Type="datetime" />
+          <Property Name="FINISHDATE" Type="datetime" />
+          <Property Name="LASTNAME" Type="varchar" MaxLength="20" />
+          <Property Name="FIRSTNAME" Type="varchar" MaxLength="15" />
+          <Property Name="SURNAME" Type="varchar" MaxLength="15" />
+          <Property Name="FULLNAME" Type="varchar" MaxLength="50" />
+          <Property Name="GENDERID" Type="tinyint" Nullable="false" />
+          <Property Name="BIRTHDAY" Type="datetime" />
+          <Property Name="PHONEHOME" Type="varchar" MaxLength="11" />
+          <Property Name="PHONEMOBIL" Type="varchar" MaxLength="15" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="20" />
+          <Property Name="CITY" Type="varchar" MaxLength="20" />
+          <Property Name="STREET" Type="varchar" MaxLength="50" />
+          <Property Name="HOUSE" Type="tinyint" />
+          <Property Name="APARTMENT" Type="tinyint" />
+          <Property Name="ALTADDRESS" Type="varchar" MaxLength="50" />
+          <Property Name="CARDTYPE" Type="varchar" MaxLength="50" />
+          <Property Name="OWNERGUID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CARDPER" Type="tinyint" Nullable="false" />
+          <Property Name="TURNOVER" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TestDBModelStoreContainer">
+          <EntitySet Name="Card" EntityType="Self.Card" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Card">
+          <Key>
+            <PropertyRef Name="CARDCODE" />
+          </Key>
+          <Property Name="CARDCODE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="STARTDATE" Type="DateTime" Precision="3" />
+          <Property Name="FINISHDATE" Type="DateTime" Precision="3" />
+          <Property Name="LASTNAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FIRSTNAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SURNAME" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="FULLNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GENDERID" Type="Byte" Nullable="false" />
+          <Property Name="BIRTHDAY" Type="DateTime" Precision="3" />
+          <Property Name="PHONEHOME" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="PHONEMOBIL" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="STREET" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HOUSE" Type="Byte" />
+          <Property Name="APARTMENT" Type="Byte" />
+          <Property Name="ALTADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CARDTYPE" Type="String" Unicode="false" MaxLength="50" FixedLength="false" />
+          <Property Name="OWNERGUID" Type="Guid" Nullable="false" />
+          <Property Name="CARDPER" Type="Byte" Nullable="false" />
+          <Property Name="TURNOVER" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TestDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Card" EntityType="Self.Card" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestDBModelStoreContainer" CdmEntityContainer="TestDBEntities">
+    <EntitySetMapping Name="Card">
+      <EntityTypeMapping TypeName="IsTypeOf(TestDBModel.Card)">
+        <MappingFragment StoreEntitySet="Card">
+          <ScalarProperty Name="CARDCODE" ColumnName="CARDCODE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="FINISHDATE" ColumnName="FINISHDATE" />
+          <ScalarProperty Name="LASTNAME" ColumnName="LASTNAME" />
+          <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+          <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="GENDERID" ColumnName="GENDERID" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="PHONEHOME" ColumnName="PHONEHOME" />
+          <ScalarProperty Name="PHONEMOBIL" ColumnName="PHONEMOBIL" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STREET" ColumnName="STREET" />
+          <ScalarProperty Name="HOUSE" ColumnName="HOUSE" />
+          <ScalarProperty Name="APARTMENT" ColumnName="APARTMENT" />
+          <ScalarProperty Name="ALTADDRESS" ColumnName="ALTADDRESS" />
+          <ScalarProperty Name="CARDTYPE" ColumnName="CARDTYPE" />
+          <ScalarProperty Name="OWNERGUID" ColumnName="OWNERGUID" />
+          <ScalarProperty Name="CARDPER" ColumnName="CARDPER" />
+          <ScalarProperty Name="TURNOVER" ColumnName="TURNOVER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

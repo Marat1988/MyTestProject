@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="CARDCODE" />
+    </Key>
+    <Property Name="CARDCODE" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="STARTDATE" Type="datetime" />
+    <Property Name="FINISHDATE" Type="datetime" />
+    <Property Name="LASTNAME" Type="varchar" MaxLength="20" />
+    <Property Name="FIRSTNAME" Type="varchar" MaxLength="15" />
+    <Property Name="SURNAME" Type="varchar" MaxLength="15" />
+    <Property Name="FULLNAME" Type="varchar" MaxLength="50" />
+    <Property Name="GENDERID" Type="tinyint" Nullable="false" />
+    <Property Name="BIRTHDAY" Type="datetime" />
+    <Property Name="PHONEHOME" Type="varchar" MaxLength="11" />
+    <Property Name="PHONEMOBIL" Type="varchar" MaxLength="15" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="20" />
+    <Property Name="CITY" Type="varchar" MaxLength="20" />
+    <Property Name="STREET" Type="varchar" MaxLength="50" />
+    <Property Name="HOUSE" Type="tinyint" />
+    <Property Name="APARTMENT" Type="tinyint" />
+    <Property Name="ALTADDRESS" Type="varchar" MaxLength="50" />
+    <Property Name="CARDTYPE" Type="varchar" MaxLength="50" />
+    <Property Name="OWNERGUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CARDPER" Type="tinyint" Nullable="false" />
+    <Property Name="TURNOVER" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TestDBModelStoreContainer">
+    <EntitySet Name="Card" EntityType="Self.Card" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
