@@ -7,5 +7,5 @@
  <li>База данных - MS SQL Server 2016</li>
  <li>Widows form</li>
  <li>Entity framework (database first)</li>
- <li>Десериализация файла XML</ul>li>
+ <li>Десериализация файла XML</li>
 <ul>
